@@ -18,7 +18,7 @@ use \Thapp\Commandeur\CommandInterface;
  * @package Stubs
  * @version $Id$
  */
-class AbstractCommand implements CommandInterface
+abstract class AbstractCommand implements CommandInterface
 {
     /**
      * attrs
