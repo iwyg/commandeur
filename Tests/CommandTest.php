@@ -46,6 +46,10 @@ class CommandTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($cmd->has('name'));
         $this->assertFalse($cmd->has('age'));
         $this->assertFalse($cmd->has('sex'));
+
+        $this->assertNull($cmd->get('name'));
+        $this->assertNull($cmd->get('age'));
+        $this->assertNull($cmd->get('sex'));
     }
 
     /** @test */

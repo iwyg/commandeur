@@ -11,51 +11,18 @@
 
 namespace Thapp\Commandeur\Tests\Stubs;
 
-use \Thapp\Commandeur\CommandInterface;
-use \Selene\Components\Common\Traits\Getter;
+use \Thapp\Commandeur\AbstractCommand;
 
 /**
  * @class CommandStub
  * @package Stubs
  * @version $Id$
  */
-class CommandStub implements CommandInterface
+class CommandStub extends AbstractCommand
 {
-    use Getter;
-
-    /**
-     * attrs
-     *
-     * @var array
-     */
-    protected $attrs;
 
     public function __construct($name, $age, $sex)
     {
         $this->attrs = compact('name', 'age', 'sex');
-    }
-
-    /**
-     * has
-     *
-     * @param string $attr
-     *
-     * @return boolean
-     */
-    public function has($attr)
-    {
-        return isset($this->attrs[$attr]);
-    }
-
-    /**
-     * get
-     *
-     * @param string $attr
-     *
-     * @return mixed
-     */
-    public function get($attr)
-    {
-        return $this->getDefault($this->attrs, $attr);
     }
 }
