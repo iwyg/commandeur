@@ -1,24 +1,27 @@
 {
-    "name": "thapp/commandeur",
-    "description": "Domain event handling stuff",
-    "require": {
-        "selene/events": "dev-development"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0",
-        "mockery/mockery": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-          "Thapp\\Commandeur\\":""
-        }
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Thomas Appel",
-            "email": "mail@thomas-appel.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "thapp/commandeur",
+  "description": "Domain event handling stuff",
+  "keywords": [
+    "domain", "events", "interface"
+  ],
+  "require": {
+    "selene/events": "dev-development"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Thapp\\Commandeur\\":""
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+    "name": "Thomas Appel",
+    "email": "mail@thomas-appel.com"
+  }
+  ],
+  "minimum-stability": "dev"
 }
