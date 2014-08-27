@@ -22,5 +22,5 @@ interface CommandBusInterface
 {
     public function execute(CommandInterface $command);
 
-    public function getCommandHanler(CommandInterface $command);
+    public function getCommandHandler(CommandInterface $command);
 }
